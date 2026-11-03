@@ -1,12 +1,10 @@
-# GitHub Linguist language overrides
-# Ensures the repository is recognized and displayed as 100% Java on GitHub
+# Enforce 100% Java language detection on GitHub
+* linguist-detectable=false
+*.java linguist-detectable=true
+*.java linguist-language=Java
 
-frontend/** linguist-vendored
-sample_data/** linguist-vendored
-*.js linguist-vendored
-*.css linguist-vendored
-*.svg linguist-vendored
-*.html linguist-vendored
-*.sh linguist-vendored
-*.xml linguist-vendored
-
+# Treat static and vendored directories as non-code
+frontend/** linguist-vendored=true
+frontend/** linguist-detectable=false
+sample_data/** linguist-vendored=true
+sample_data/** linguist-detectable=false
