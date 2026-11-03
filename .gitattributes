@@ -1,0 +1,11 @@
+# GitHub Linguist language overrides
+# Ensures the repository is recognized and displayed as 100% Java on GitHub
+
+frontend/** linguist-vendored
+sample_data/** linguist-vendored
+*.js linguist-vendored
+*.css linguist-vendored
+*.svg linguist-vendored
+*.html linguist-vendored
+*.sh linguist-vendored
+*.xml linguist-vendored
